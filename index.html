@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Wireframe to HTML/CSS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="weather logo" class="logo" />
+    <h1>Weather Forecast</h1>
+   
+    <form>
+        <div class="search">
+          <input
+          action="/submit"
+            type="text"
+            class="form-control"
+            id="citySearch"
+            placeholder="Enter your city"
+          />
+          <br />
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+         
+    <h2></h2>
+
+    <h3>Durban, South Africa</h3>
+
+    <p>
+        <span class="temperature" id="temperature">22</span
+          ><span class="units">
+            <a href="#" id="celsius-link">℃</a> |
+            <a href="#" id="fahrenheit-link">℉</a></span
+          >
+      
+      <ul class="conditions">
+        <li>
+          Percipitation: 0%
+        </li>
+        <li>
+          Humidity: 76%
+        </li>
+        <li>
+          Wind: 8 km/h
+        </li>
+      </ul>
+    </p>
+    
+  
+    <div class= "row">
+      <div class = "col-3">
+        Monday <br/>
+        23°C<br>
+        ⛅️ 
+      </div>
+      <div class = "col-3">
+        Tuesday <br />
+        22°C<br/>
+        ☁️ 
+      </div>
+      <div class = "col-3">
+        Wednesday <br/>
+        26°C <br />
+        🌞 
+       </div>
+       <div class = "col-3">
+        Thursday <br/>
+        19°C <br />
+        🌧️
+        </div>
+      </div>
+    
+    <script src="src/index.js"></script>
+  	<div id="app"></div>
+
+</body>
+</html>
